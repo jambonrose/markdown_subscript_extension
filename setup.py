@@ -26,7 +26,7 @@ with codec_open(path.join(HERE, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 setup(
     name='MarkdownSubscript',
 
-    version='1.0a1',  # PEP 440 Compliant Semantic Versioning
+    version='1.0b1',  # PEP 440 Compliant Semantic Versioning
 
     keywords='text filter markdown html subscript',
     description='Python-Markdown extension to allow for subscript text.',
@@ -42,7 +42,7 @@ setup(
 
     license='Simplified BSD License',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
