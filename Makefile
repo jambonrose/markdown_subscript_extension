@@ -1,4 +1,4 @@
-.PHONY: test description check dist release clean
+.PHONY: check clean description dist release test
 
 test:
 	nosetests --with-coverage --cover-package=mdx_subscript
