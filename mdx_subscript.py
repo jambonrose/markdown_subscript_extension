@@ -25,9 +25,9 @@ from markdown.inlinepatterns import SimpleTagPattern
 SUBSCRIPT_RE = r'(\~)([^\~]+)\2'
 
 
-def makeExtension(configs=None):
+def makeExtension(*args, **kwargs):
     """Inform Markdown of the existence of the extension."""
-    return SubscriptExtension(configs=dict(configs))
+    return SubscriptExtension(*args, **kwargs)
 
 
 class SubscriptExtension(Extension):
