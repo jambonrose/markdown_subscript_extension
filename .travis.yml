@@ -6,10 +6,18 @@ python:
   - "3.3"
   - "3.4"
   - "pypy"
+env:
+  - "MD_VERSION=2.4.1"
+  - "MD_VERSION=2.5.1"
 install:
+  - "pip install -q Markdown==$MD_VERSION"
   - "pip install ."
   - "pip install -r requirements/test_requirements.txt"
 script:
   - "nosetests --with-coverage --cover-package=mdx_subscript"
 after_success:
   - "coveralls"
+matrix:
+  exclude:
+    - python: "2.6"
+      env: "MD_VERSION=2.5.1"
