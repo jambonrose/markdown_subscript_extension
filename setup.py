@@ -38,7 +38,7 @@ setup(
     url='https://github.com/jambonrose/markdown_subscript_extension',
 
     py_modules=['mdx_subscript'],
-    install_requires=['Markdown>=2.0'],
+    install_requires=['Markdown>=2.4'],
 
     license='Simplified BSD License',
     classifiers=[

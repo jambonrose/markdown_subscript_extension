@@ -21,7 +21,7 @@ This project is provided under the [Simplified (2 Clause) BSD license](http://ch
 Dependencies:
 
 - Python 2.6, 2.7, 3.2+
-- Markdown 2.0+
+- Markdown 2.4+ (Tested against 2.4.1, 2.5.1)
 
 To install the latest stable release (recommended):
 
@@ -65,4 +65,4 @@ $ cat requirements/* > requirements.txt
 $ pip install -r requirements.txt
 ```
 
-The `Makefile` provides the ability to run tests by invoking `$ make test`, which will invoke the nose package with the command `$ nosetests --with-coverage --cover-package=mdx_subscript` (incidentally, this is also the command used on [TravisCI](https://travis-ci.org/jambonrose/markdown_subscript_extension) and [Coveralls.io](https://coveralls.io/r/jambonrose/markdown_subscript_extension).
+The `Makefile` provides the ability to run tests by invoking `$ make test`, which will invoke the nose package with the command `$ nosetests --with-coverage --cover-package=mdx_subscript` (incidentally, this is also the command used on [TravisCI](https://travis-ci.org/jambonrose/markdown_subscript_extension) and [Coveralls.io](https://coveralls.io/r/jambonrose/markdown_subscript_extension)).
