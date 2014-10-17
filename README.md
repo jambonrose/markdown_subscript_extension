@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/jambonrose/markdown_subscript_extension.svg?branch=master)](https://travis-ci.org/jambonrose/markdown_subscript_extension)
 [![Coverage Status](https://img.shields.io/coveralls/jambonrose/markdown_subscript_extension.svg)](https://coveralls.io/r/jambonrose/markdown_subscript_extension)
+[![PyPI Version](http://img.shields.io/pypi/v/MarkdownSubscript.svg)](https://pypi.python.org/pypi/MarkdownSubscript/)
+[![License](http://img.shields.io/pypi/l/MarkdownSubscript.svg)](http://opensource.org/licenses/BSD-2-Clause)
 
 An extension to [Waylan Limberg](https://github.com/waylan)'s [Python Markdown](https://github.com/waylan/Python-Markdown) project ([documentation here](https://pythonhosted.org/Markdown/index.html)) that provides support for subscript text in Markdown. The extension treats `~` characters as tags, converting pairs into HTML `sub` tags.
 
