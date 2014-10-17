@@ -1,5 +1,4 @@
 # Markdown Subscript
-============================
 
 [![Build Status](https://travis-ci.org/jambonrose/markdown_subscript_extension.svg?branch=master)](https://travis-ci.org/jambonrose/markdown_subscript_extension)
 [![Coverage Status](https://img.shields.io/coveralls/jambonrose/markdown_subscript_extension.svg)](https://coveralls.io/r/jambonrose/markdown_subscript_extension)
