@@ -1,4 +1,4 @@
-docutils
+docutils==0.13.1
 flake8
 pylint
 wheel
