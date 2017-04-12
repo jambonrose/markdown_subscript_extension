@@ -5,7 +5,7 @@ Markdown Subscript Extension Tests
 ==================================
 
 :website: https://github.com/jambonrose/markdown_subscript_extension
-:copyright: Copyright 2014 Andrew Pinkham
+:copyright: Copyright 2014-2017 Andrew Pinkham
 :license: BSD, see LICENSE for details.
 """
 
