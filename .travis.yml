@@ -1,3 +1,6 @@
+branches:
+  only:
+    - development
 language: python
 python:
   - 2.7
@@ -6,6 +9,8 @@ python:
   - 3.5
   - 3.6
   - pypy
+cache:
+  pip: true
 env:
   - MD_VERSION=2.5 MD_NEXT=2.6
   - MD_VERSION=2.6 MD_NEXT=2.7
