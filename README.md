@@ -21,8 +21,9 @@ This project is provided under the [Simplified (2 Clause) BSD license](http://ch
 
 Dependencies:
 
-- Python 2.6, 2.7, 3.2+
-- Markdown 2.4+ (Tested against 2.4.1, 2.5.1)
+- Python 2.7, 3.3+
+- Markdown 2.5+
+  (Tested against latest patch version of Markdown 2.5 and 2.6)
 
 To install the latest stable release (recommended):
 
