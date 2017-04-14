@@ -1,8 +1,8 @@
 # Markdown Subscript
 
-[![Build Status](https://travis-ci.org/jambonrose/markdown_subscript_extension.svg?branch=master)](https://travis-ci.org/jambonrose/markdown_subscript_extension)
+[![Build Status](https://travis-ci.org/jambonrose/markdown_subscript_extension.svg?branch=development)](https://travis-ci.org/jambonrose/markdown_subscript_extension)
 [![Coverage Status](https://img.shields.io/coveralls/jambonrose/markdown_subscript_extension.svg)](https://coveralls.io/r/jambonrose/markdown_subscript_extension)
-[![Requirements Status](https://requires.io/github/jambonrose/markdown_subscript_extension/requirements.svg?branch=master)](https://requires.io/github/jambonrose/markdown_subscript_extension/requirements/?branch=master)
+[![Requirements Status](https://requires.io/github/jambonrose/markdown_subscript_extension/requirements.svg?branch=development)](https://requires.io/github/jambonrose/markdown_subscript_extension/requirements/?branch=development)
 [![PyPI Version](http://img.shields.io/pypi/v/MarkdownSubscript.svg)](https://pypi.python.org/pypi/MarkdownSubscript/)
 
 [![Python Implementation Support](https://img.shields.io/pypi/implementation/MarkdownSubscript.svg)](https://pypi.python.org/pypi/MarkdownSubscript/)
