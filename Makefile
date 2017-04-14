@@ -3,6 +3,9 @@
 test:
 	nosetests --with-coverage --cover-package=mdx_subscript
 
+tox:
+	tox
+
 description:
 	rst2html.py DESCRIPTION.rst > description.html
 
@@ -19,7 +22,10 @@ release:
 	twine upload dist/*
 
 clean:
-	rm -rf __pycache__
+	find . -name "*.pyc" -delete
+	find . -name "__pycache__" -delete
+	rm -rf *.egg-info
+	rm -rf .coverage
+	rm -rf .tox
 	rm -rf build
 	rm -rf dist
-	rm -rf *.egg-info

@@ -67,3 +67,8 @@ $ pip install -r requirements.txt
 ```
 
 The `Makefile` provides the ability to run tests by invoking `$ make test`, which will invoke the nose package with the command `$ nosetests --with-coverage --cover-package=mdx_subscript` (incidentally, this is also the command used on [TravisCI](https://travis-ci.org/jambonrose/markdown_subscript_extension) and [Coveralls.io](https://coveralls.io/r/jambonrose/markdown_subscript_extension)).
+
+Additionally, provided you have all of the proper Python
+implementations/versions installed, it is possible to use `tox` to test
+multiple environments by invoking `tox` on the commandline (no arguments
+required).
