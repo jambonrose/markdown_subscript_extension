@@ -28,7 +28,7 @@ setup(
 
     version='1.0.1',  # PEP 440 Compliant Semantic Versioning
 
-    keywords='text filter markdown html subscript',
+    keywords=['text', 'filter', 'markdown', 'html', 'subscript'],
     description='Python-Markdown extension to allow for subscript text.',
     long_description=LONG_DESCRIPTION,
 
