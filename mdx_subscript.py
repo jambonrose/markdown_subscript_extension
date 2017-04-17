@@ -12,7 +12,7 @@ Will output:
     <p>The molecular composition of water is H<sub>2</sub>O.</p>
 
 :website: https://github.com/jambonrose/markdown_subscript_extension
-:copyright: Copyright 2014 Andrew Pinkham
+:copyright: Copyright 2014-2017 Andrew Pinkham
 :license: Simplified BSD, see LICENSE for details.
 """
 

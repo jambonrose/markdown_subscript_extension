@@ -1,23 +1,24 @@
+branches:
+  only:
+    - development
 language: python
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "pypy"
+  - 2.7
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+  - pypy
+cache:
+  pip: true
 env:
-  - "MD_VERSION=2.4.1"
-  - "MD_VERSION=2.5.1"
+  - MD_VERSION=2.5 MD_NEXT=2.6
+  - MD_VERSION=2.6 MD_NEXT=2.7
 install:
-  - "pip install -q Markdown==$MD_VERSION"
-  - "pip install ."
-  - "pip install -r requirements/test_requirements.txt"
+  - pip install -q "Markdown>=$MD_VERSION,<$MD_NEXT"
+  - pip install .
+  - pip install -r requirements/test_requirements.txt
 script:
-  - "nosetests --with-coverage --cover-package=mdx_subscript"
+  - nosetests --with-coverage --cover-branches --cover-package=mdx_subscript
 after_success:
-  - "coveralls"
-matrix:
-  exclude:
-    - python: "2.6"
-      env: "MD_VERSION=2.5.1"
+  - codecov
