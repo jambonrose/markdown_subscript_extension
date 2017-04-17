@@ -20,7 +20,17 @@ HERE = path.abspath(path.dirname(__file__))
 
 # Get the long description from the Read Me
 with codec_open(path.join(HERE, 'README.rst'), encoding='utf-8') as f:
-    LONG_DESCRIPTION = f.read()
+    long_description = f.read()
+
+# Get runtime dependencies
+run_reqs = 'requirements/run_requirements.txt'
+with codec_open(path.join(HERE, run_reqs), encoding='utf-8') as f:
+    install_requires = f.read().splitlines()
+
+# Get test dependencies
+test_reqs = 'requirements/test_requirements.txt'
+with codec_open(path.join(HERE, test_reqs), encoding='utf-8') as f:
+    tests_require = f.read().splitlines()
 
 
 setup(
@@ -30,7 +40,7 @@ setup(
 
     keywords=['text', 'filter', 'markdown', 'html', 'subscript'],
     description='Python-Markdown extension to allow for subscript text.',
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
 
     author='Andrew Pinkham',
     author_email='hello at andrewsforge dot com',
@@ -38,7 +48,9 @@ setup(
     url='https://github.com/jambonrose/markdown_subscript_extension',
 
     py_modules=['mdx_subscript'],
-    install_requires=['Markdown>=2.5,<2.7'],
+    install_requires=install_requires,
+    test_suite='tests',
+    tests_require=tests_require,
 
     license='Simplified BSD License',
     classifiers=[
