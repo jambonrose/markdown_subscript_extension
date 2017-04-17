@@ -13,10 +13,9 @@ check:
 	python setup.py check
 
 dist:
-	python setup.py sdist --formats=gztar,zip bdist_wheel
+	python setup.py sdist --formats=gztar bdist_wheel
 	gpg --armor --detach-sign -u 5878672C -a dist/MarkdownSubscript*.whl
 	gpg --armor --detach-sign -u 5878672C -a dist/MarkdownSubscript*.tar.gz
-	gpg --armor --detach-sign -u 5878672C -a dist/MarkdownSubscript*.zip
 
 release:
 	twine upload dist/*
