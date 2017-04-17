@@ -2,7 +2,7 @@ Latest Release: |Version| |Tag|
 
 Compatibility: |Implementation| |Python| |License|
 
-Tests: |Build| |Coverage| |Requirements|
+Tests: |Build| |Coverage| |PyUp| |Requirements|
 
 .. |Version| image:: http://img.shields.io/pypi/v/MarkdownSubscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSubscript/
@@ -31,6 +31,10 @@ Tests: |Build| |Coverage| |Requirements|
 .. |Coverage| image:: https://img.shields.io/coveralls/jambonrose/markdown_subscript_extension.svg
         :target: https://coveralls.io/r/jambonrose/markdown_subscript_extension
         :alt: Coverage Status
+
+.. |PyUp| image:: https://pyup.io/repos/github/jambonrose/markdown_subscript_extension/shield.svg
+        :target: https://pyup.io/repos/github/jambonrose/markdown_subscript_extension/
+        :alt: Updates
 
 .. |Requirements| image:: https://requires.io/github/jambonrose/markdown_subscript_extension/requirements.svg?branch=development
         :target: https://requires.io/github/jambonrose/markdown_subscript_extension/requirements/?branch=development
