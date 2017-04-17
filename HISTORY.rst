@@ -1,4 +1,4 @@
-2.0.0 (2017-04-15)
+2.0.0 (2017-04-17)
 =====
     - Add test/support for Python-Markdown 2.6
     - Drop Support For:
