@@ -1,4 +1,4 @@
-Latest Release: |Version|
+Latest Release: |Version| |Tag|
 
 Compatibility: |Implementation| |Python| |License|
 
@@ -7,6 +7,10 @@ Tests: |Build| |Coverage| |Requirements|
 .. |Version| image:: http://img.shields.io/pypi/v/MarkdownSubscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSubscript/
         :alt: PyPI Version
+
+.. |Tag| image:: https://img.shields.io/github/tag/jambonrose/markdown_subscript_extension.svg
+        :target: https://github.com/jambonrose/markdown_subscript_extension/releases
+        :alt: Github Tag
 
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSubscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSubscript/
