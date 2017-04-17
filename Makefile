@@ -7,7 +7,7 @@ tox:
 	tox
 
 description:
-	rst2html.py DESCRIPTION.rst > description.html
+	rst2html.py README.rst > readme.html
 
 check:
 	python setup.py check
