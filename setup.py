@@ -49,7 +49,7 @@ setup(
 
     py_modules=['mdx_subscript'],
     install_requires=install_requires,
-    test_suite='tests',
+    test_suite='nose.collector',
     tests_require=tests_require,
 
     license='Simplified BSD License',
