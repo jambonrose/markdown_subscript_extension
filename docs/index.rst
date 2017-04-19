@@ -1,16 +1,24 @@
-.. MarkdownSubscript documentation master file, created by
-   sphinx-quickstart on Wed Apr 19 15:06:06 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to Markdown Subscript's documentation!
+==============================================
 
-Welcome to MarkdownSubscript's documentation!
-=============================================
+An extension to the `Python Markdown`_ package enabling subscript text.
+
+The code is `available on github.`_
+
+.. _`Python Markdown`: https://pypi.python.org/pypi/Markdown
+.. _`available on github.`: https://github.com/jambonrose/markdown_subscript_extension
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+   overview
+   installation
+   usage
+   contributing
+   release
+   authors
+   history
 
 Indices and tables
 ==================
