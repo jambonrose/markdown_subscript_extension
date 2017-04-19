@@ -2,7 +2,7 @@
 History
 =======
 
-2.0.1 (2017-04-19)
+2.1.0 (2017-04-19)
 ------------------
     - Integrate PyUp
     - Write documentation in Sphinx
