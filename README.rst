@@ -1,5 +1,7 @@
 Latest Release: |Version| |Tag|
 
+Documentation: |Docs|
+
 Compatibility: |Implementation| |Python| |License|
 
 Tests: |Build| |Coverage| |PyUp| |Requirements|
@@ -11,6 +13,10 @@ Tests: |Build| |Coverage| |PyUp| |Requirements|
 .. |Tag| image:: https://img.shields.io/github/tag/jambonrose/markdown_subscript_extension.svg
         :target: https://github.com/jambonrose/markdown_subscript_extension/releases
         :alt: Github Tag
+
+.. |Docs| image:: https://readthedocs.org/projects/markdown_subscript_extension/badge/?version=latest
+        :target: http://markdown_subscript_extension.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
 
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSubscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSubscript/
