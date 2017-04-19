@@ -1,12 +1,22 @@
-Latest Release: |Version|
+Latest Release: |Version| |Tag|
+
+Documentation: |Docs|
 
 Compatibility: |Implementation| |Python| |License|
 
-Tests: |Build| |Coverage| |Requirements|
+Tests: |Build| |Coverage| |PyUp| |Requirements|
 
 .. |Version| image:: http://img.shields.io/pypi/v/MarkdownSubscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSubscript/
         :alt: PyPI Version
+
+.. |Tag| image:: https://img.shields.io/github/tag/jambonrose/markdown_subscript_extension.svg
+        :target: https://github.com/jambonrose/markdown_subscript_extension/releases
+        :alt: Github Tag
+
+.. |Docs| image:: https://readthedocs.org/projects/markdown_subscript_extension/badge/?version=latest
+        :target: http://markdown_subscript_extension.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
 
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSubscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSubscript/
@@ -24,9 +34,13 @@ Tests: |Build| |Coverage| |Requirements|
         :target: https://travis-ci.org/jambonrose/markdown_subscript_extension
         :alt: Build Status
 
-.. |Coverage| image:: https://img.shields.io/coveralls/jambonrose/markdown_subscript_extension.svg
-        :target: https://coveralls.io/r/jambonrose/markdown_subscript_extension
+.. |Coverage| image:: https://codecov.io/gh/jambonrose/markdown_subscript_extension/branch/development/graph/badge.svg
+        :target: https://codecov.io/gh/jambonrose/markdown_subscript_extension
         :alt: Coverage Status
+
+.. |PyUp| image:: https://pyup.io/repos/github/jambonrose/markdown_subscript_extension/shield.svg
+        :target: https://pyup.io/repos/github/jambonrose/markdown_subscript_extension/
+        :alt: Updates
 
 .. |Requirements| image:: https://requires.io/github/jambonrose/markdown_subscript_extension/requirements.svg?branch=development
         :target: https://requires.io/github/jambonrose/markdown_subscript_extension/requirements/?branch=development
