@@ -2,6 +2,14 @@
 History
 =======
 
+2.0.1 (2017-04-19)
+------------------
+    - Integrate PyUp
+    - Write documentation in Sphinx
+    - Integrate Read The Docs
+    - Rework existing restructured text documents
+    - Fix badges in Read Me
+
 2.0.0 (2017-04-17)
 ------------------
     - Add test/support for Python-Markdown 2.6
