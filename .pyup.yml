@@ -2,7 +2,5 @@ update: all
 pin: True
 branch: development
 schedule: "every week on monday"
-assignees: 
-  - jambonrose
 branch_prefix: update/
 pr_prefix: "[PyUp]"
