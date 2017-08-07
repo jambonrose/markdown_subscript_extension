@@ -1,5 +1,5 @@
 bumpversion==0.5.3
-docutils==0.13.1
+docutils==0.14
 flake8==3.4.1
 sphinx-autobuild==0.7.1
 sphinx-rtd-theme==0.2.4
