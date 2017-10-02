@@ -3,7 +3,7 @@ docutils==0.14
 flake8==3.4.1
 sphinx-autobuild==0.7.1
 sphinx-rtd-theme==0.2.4
-sphinx==1.6.3
+sphinx==1.6.4
 tox==2.8.1
 twine==1.9.1
 wheel==0.29.0
