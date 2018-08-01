@@ -2,7 +2,7 @@ bumpversion==0.5.3
 docutils==0.14
 flake8==3.5.0
 sphinx-autobuild==0.7.1
-sphinx-rtd-theme==0.4.0
+sphinx-rtd-theme==0.4.1
 sphinx==1.7.5
 tox==3.0.0
 twine==1.11.0
