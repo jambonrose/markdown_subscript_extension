@@ -10,6 +10,7 @@
 from codecs import open as codec_open
 from distutils.command.check import check as CheckCommand  # noqa: N812
 from os import path
+from sys import argv
 
 from setuptools import setup
 
@@ -24,6 +25,12 @@ with codec_open(path.join(HERE, "README.rst"), encoding="utf-8") as f:
 test_reqs = "requirements/test_requirements.txt"
 with codec_open(path.join(HERE, test_reqs), encoding="utf-8") as f:
     tests_require = f.read().splitlines()
+
+setup_requires_pytest_runner = (
+    ["pytest-runner>=4.2,<5"]
+    if {"pytest", "test", "ptr"}.intersection(argv)
+    else []
+)
 
 
 class CustomCheckCommand(CheckCommand):
@@ -118,6 +125,7 @@ setup(
     install_requires=["Markdown>=2.5,<3.1"],
     test_suite="nose.collector",
     tests_require=tests_require,
+    setup_requires=setup_requires_pytest_runner,
     license="Simplified BSD License",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
