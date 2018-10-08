@@ -41,7 +41,7 @@ Look through the `GitHub issues`_ for features. Anything tagged with
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-Markdown Superscript could always use more documentation, whether as part
+Markdown Subscript could always use more documentation, whether as part
 of the official Markdown Subscript docs, in docstrings, or even on the
 web in blog posts, articles, and such.
 
