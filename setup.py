@@ -9,24 +9,34 @@
 
 from codecs import open as codec_open
 from distutils.command.check import check as CheckCommand  # noqa: N812
-from os import path
+from os.path import abspath, dirname, join
 from sys import argv
 
 from setuptools import setup
 
-HERE = path.abspath(path.dirname(__file__))
+HERE = abspath(dirname(__file__))
+
+
+def load_file_contents(file_path, as_list=True):
+    """Load file as string or list"""
+    abs_file_path = join(HERE, file_path)
+    with codec_open(abs_file_path, encoding="utf-8") as file_pointer:
+        if as_list:
+            return file_pointer.read().splitlines()
+        return file_pointer.read()
 
 
 # Get the long description from the Read Me
-with codec_open(path.join(HERE, "README.rst"), encoding="utf-8") as f:
-    long_description = f.read()
+LONG_DESCRIPTION = (
+    load_file_contents("README.rst", as_list=False)
+    .split(".. start-pypi-description")[1]  # remove badge icons and title
+    .lstrip()  # remove any extraneous spaces before title
+)
 
 # Get test dependencies
-test_reqs = "requirements/test_requirements.txt"
-with codec_open(path.join(HERE, test_reqs), encoding="utf-8") as f:
-    tests_require = f.read().splitlines()
+TESTS_REQUIRE = load_file_contents("requirements/test_requirements.txt")
 
-setup_requires_pytest_runner = (
+SETUP_REQUIRES_PYTEST_RUNNER = (
     ["pytest-runner>=4.2,<5"]
     if {"pytest", "test", "ptr"}.intersection(argv)
     else []
@@ -117,15 +127,14 @@ setup(
     version="2.1.0",  # PEP 440 Compliant Semantic Versioning
     keywords=["text", "filter", "markdown", "html", "subscript"],
     description="Python-Markdown extension to allow for subscript text.",
-    long_description=long_description,
+    long_description=LONG_DESCRIPTION,
     author="Andrew Pinkham",
     url="https://github.com/jambonrose/markdown_subscript_extension",
     cmdclass={"check": CustomCheckCommand},
     py_modules=["mdx_subscript"],
     install_requires=["Markdown>=2.5,<3.1"],
-    test_suite="nose.collector",
-    tests_require=tests_require,
-    setup_requires=setup_requires_pytest_runner,
+    tests_require=TESTS_REQUIRE,
+    setup_requires=SETUP_REQUIRES_PYTEST_RUNNER,
     license="Simplified BSD License",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
