@@ -1,24 +1,46 @@
+dist: trusty
+sudo: false
 branches:
   only:
-    - development
+  - development
 language: python
 python:
-  - 2.7
-  - 3.3
-  - 3.4
-  - 3.5
-  - 3.6
-  - pypy
+- 2.7
+- 3.3
+- 3.4
+- 3.5
+- 3.6
+- pypy
+- pypy3
 cache:
   pip: true
 env:
-  - MD_VERSION=2.5 MD_NEXT=2.6
-  - MD_VERSION=2.6 MD_NEXT=2.7
+- MD_VERSION=2.5 MD_NEXT=2.6
+- MD_VERSION=2.6 MD_NEXT=2.7
+- MD_VERSION=3.0 MD_NEXT=3.1
+matrix:
+  exclude:
+  - python: 3.3
+    env: MD_VERSION=3.0 MD_NEXT=3.1
+  include:
+  - python: 3.7
+    env: MD_VERSION=2.6 MD_NEXT=2.7
+    sudo: required
+    dist: xenial
+  - python: 3.7
+    env: MD_VERSION=3.0 MD_NEXT=3.1
+    sudo: required
+    dist: xenial
 install:
-  - pip install -q "Markdown>=$MD_VERSION,<$MD_NEXT"
-  - pip install .
-  - pip install -r requirements/test_requirements.txt
+- if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then pip install -r requirements/lint_requirements.txt ; fi
+- pip install -r requirements/test_requirements.txt
+- pip install codecov
+- pip install -q "Markdown>=$MD_VERSION,<$MD_NEXT"
+- python setup.py develop
+before_script:
+- pip freeze
 script:
-  - nosetests --with-coverage --cover-branches --cover-package=mdx_subscript
+- if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then flake8 . ; fi
+- pytest -v --cov --cov-report term-missing
 after_success:
-  - codecov
+- codecov

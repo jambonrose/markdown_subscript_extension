@@ -1,10 +1,21 @@
-include LICENSE
-
+exclude .bumpversion.cfg
+exclude .coveragerc
+exclude .flake8
+exclude .ignore
+exclude .isort.cfg
+exclude .pre-commit-config.yaml
+exclude .pyup.yml
+exclude .readthedocs.yml
+exclude .travis.yml
+exclude Makefile
+exclude tox.ini
 include AUTHORS.rst
 include CONTRIBUTING.rst
 include HISTORY.rst
+include LICENSE
+include pyproject.toml
 include README.rst
-
+include setup.cfg
+recursive-include docs *.txt *.rst conf.py Makefile make.bat
 recursive-include requirements *.txt
 recursive-include tests *.py
-recursive-include docs *.rst conf.py Makefile make.bat

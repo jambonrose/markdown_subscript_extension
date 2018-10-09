@@ -17,20 +17,16 @@ Report Bugs
 
 Report bugs on `Github issues`_.
 
-If you are reporting a bug, please include:
+If you are reporting a bug, please follow the guidelines shown to you
+while reporting the bug
 
-* Your operating system name and version.
+Fix Bugs and Support Others
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Any details about your local setup that might be helpful in
-  troubleshooting.
-
-* Detailed steps to reproduce the bug.
-
-Fix Bugs
-~~~~~~~~
-
-Look through the `GitHub issues`_ for bugs. Anything tagged with "bug" and
-"help wanted" is open to whoever wants to implement it.
+Look through the open `GitHub issues`_. Anything tagged with
+"help wanted" is open to whoever wants to implement it. Anything tagged
+with "support" means someone needs help, and you may be the person to
+help them!
 
 Implement Features
 ~~~~~~~~~~~~~~~~~~
@@ -41,7 +37,7 @@ Look through the `GitHub issues`_ for features. Anything tagged with
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-Markdown Superscript could always use more documentation, whether as part
+Markdown Subscript could always use more documentation, whether as part
 of the official Markdown Subscript docs, in docstrings, or even on the
 web in blog posts, articles, and such.
 
@@ -59,62 +55,102 @@ If you are proposing a feature:
 * Remember that this is a volunteer-driven project, and that contributions
   are welcome :)
 
+.. _`file an issue on Github`:
+.. _`Github Issues`: https://github.com/jambonrose/markdown_subscript_extension/issues
+
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `markdown_subscript_extension`
+Ready to contribute? Here's how to set up ``markdown_subscript_extension``
 for local development.
 
-1. Fork the `markdown_subscript_extension` repo on GitHub.
-2. Clone your fork locally::
+1. Fork the ``markdown_subscript_extension`` repository on `GitHub`_.
 
-    $ git clone git@github.com:YOUR_USERNAME_HERE/markdown_subscript_extension.git
+.. _`Github`: https://github.com/jambonrose/markdown_subscript_extension
 
-3. Install your local copy into a virtualenv. Assuming you have
-   virtualenvwrapper installed, this is how you set up your fork for local
-   development::
+2. Create a directory for your project, and then create a virtual
+   environment.  If you new to virtual environments, `RealPython's
+   Virtualenv Primer`_ is for you! The code below demonstrates how to
+   create a virtual project with `Virtualenvwrapper`_ ::
 
-    $ mkproject markdown_subscript_extension
-    $ pip install -r requirements/dev_requirements.txt
-    $ pip install -r requirements/test_requirements.txt
-    $ python setup.py develop
+   $ mkproject markdown_subscript_extension
 
-4. Create a branch for local development::
+.. _`RealPython's Virtualenv Primer`: https://realpython.com/python-virtual-environments-a-primer/
+.. _Virtualenvwrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
 
-    $ git checkout -b name-of-your-bugfix-or-feature
+3. Clone your fork locally into your new project. ::
 
-   Now you can make your changes locally.
+    $ git clone git@github.com:YOUR_USERNAME_HERE/markdown_subscript_extension.git .
 
-5. When you're done making changes, check that your changes pass flake8
-   and the tests, including testing other Python versions with tox::
+4. Install the necessary dependencies using pip. If you don't have
+   `pip`_ installed, the `Python installation guide`_ can guide you
+   through the process. ::
 
-    $ flake8 mdx_subscript.py tests
-    $ nosetests --with-coverage --cover-package=mdx_subscript # or: make test
-    $ tox
+   $ pip install -r requirements/dev_requirements.txt
+   $ pip install -r requirements/lint_requirements.txt
+   $ pip install -r requirements/test_requirements.txt
+   $ python setup.py develop
 
-6. Commit your changes and push your branch to GitHub::
+.. _pip: https://pip.pypa.io/en/stable/
+.. _Python installation guide: https://docs.python-guide.org/starting/installation/
+
+5. Create a branch for local development and begin to make changes! ::
+
+   $ git checkout -b name-of-your-bugfix-or-feature
+
+6. Make small, targeted changes. Commit often, and write clear messages!
+   Remember that this is a volunteer-drive project. The clearer your
+   intent and your changes, the easier it will be for us to review your
+   work. ::
 
     $ git add .
     $ git commit -m "Your detailed description of your changes."
-    $ git push origin name-of-your-bugfix-or-feature
 
-7. Submit a pull request through the GitHub website.
+5. The project is configured to use `pre-commit`_. If you'd like to have
+   each commit checked as you make it, install it as a hook for your
+   repository, as demonstrated below. ::
+
+   $ pre-commit install
+
+.. _`pre-commit`: https://pre-commit.com/
+
+6. When you're done making changes, check that your changes pass the
+   test suite. If you're not using `pre-commit`_, you will also need to
+   use the linters and auto-formatters. ::
+
+   $ make test  # or python setup.py test
+   $ # linters below
+   $ flake8 mdx_subscript.py tests
+   $ isort --verbose --check-only --diff mdx_subscript.py
+   $ black mdx_subscript.py tests
+
+7. If you have Python 2.7, 3.4, 3.5, 3.6, and 3.7 installed, as well as
+   both PyPy and PyPy3, you may use ``tox`` to run all of the tests in
+   all of the supported environments. ::
+
+   $ tox
+
+8. Once you've made the changes you want, push your branch to GitHub. ::
+
+    $ git push -u origin name-of-your-bugfix-or-feature
+
+9. Submit a pull request from your new branch to the original repository
+   through the GitHub website.
+
+10. 🎉 Thank you for taking the time to read this and for your potential
+    contributions!
 
 Pull Request Guidelines
 -----------------------
 
 Before you submit a pull request, check that it meets these guidelines:
 
-1. The pull request should include tests.
+1. If a bug-fix or new feature, the pull request should include tests.
 
 2. If the pull request adds functionality, the docs should be updated.
-   Put your new functionality into a function with a docstring, and add
-   the feature to the list in README.rst.
 
-3. The pull request should work for Python 2.7, 3.3, 3.4 3.5, 3.6, and
-   for PyPy. Check `Travis CI`_ pull requests and make sure that the
-   tests pass for all supported Python versions.
+3. The pull request should work for all supported Python versions. If
+   you are unable to run ``tox`` locally, the CI will run the test suite
+   for you (but please consider running the suite beforehand).
 
-.. _`file an issue on Github`:
-.. _`Github Issues`: https://github.com/jambonrose/markdown_subscript_extension/issues
 .. _`Travis CI`: https://travis-ci.org/jambonrose/markdown_subscript_extension/
