@@ -7,7 +7,7 @@ Compatibility: |Implementation| |Python| |License|
 Tests: |Build| |Coverage| |PyUp| |Requirements|
 
 .. |Version| image:: http://img.shields.io/pypi/v/MarkdownSubscript.svg
-        :target: https://pypi.python.org/pypi/MarkdownSubscript/
+        :target: https://pypi.org/project/MarkdownSubscript/
         :alt: PyPI Version
 
 .. |Tag| image:: https://img.shields.io/github/tag/jambonrose/markdown_subscript_extension.svg
@@ -19,11 +19,11 @@ Tests: |Build| |Coverage| |PyUp| |Requirements|
         :alt: Documentation Status
 
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSubscript.svg
-        :target: https://pypi.python.org/pypi/MarkdownSubscript/
+        :target: https://pypi.org/project/MarkdownSubscript/
         :alt: Python Implementation Support
 
 .. |Python| image:: https://img.shields.io/pypi/pyversions/MarkdownSubscript.svg
-        :target: https://pypi.python.org/pypi/MarkdownSubscript/
+        :target: https://pypi.org/project/MarkdownSubscript/
         :alt: Python Support
 
 .. |License| image:: http://img.shields.io/pypi/l/MarkdownSubscript.svg
@@ -74,6 +74,6 @@ provided in full in the LICENSE file.
 
 Please read `the documentation`_ for more information.
 
-.. _`Python Markdown`: https://pypi.python.org/pypi/Markdown
+.. _`Python Markdown`: https://pypi.org/project/Markdown/
 .. _`Simplified (2 Clause) BSD license`: http://choosealicense.com/licenses/bsd-2-clause/
 .. _`the documentation`: https://markdown-subscript-extension.readthedocs.io/en/latest/
