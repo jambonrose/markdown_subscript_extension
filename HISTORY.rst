@@ -14,6 +14,7 @@ History
 - Rework existing restructured text documents
 - Fix badges in Read Me
 
+
 2.0.0 (2017-04-17)
 ------------------
 - Add test/support for Python-Markdown 2.6
@@ -23,9 +24,11 @@ History
     - Python-Markdown 2.4 (Superseded in 2014)
 - Fix Issue #2 - Setup.py errors; Description.rst missing
 
+
 1.0.1 (2014-10-17)
 ------------------
 - Update for Python-Markdown 2.5
+
 
 1.0.0 (2014-07-29)
 ------------------
