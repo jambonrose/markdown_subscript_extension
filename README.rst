@@ -58,15 +58,16 @@ subscript text. To do so, the character :code:`~` becomes a Markdown tag
 for text meant to be subscripted, and is replaced with the HTML
 :code:`sub` tag.
 
-For example, given the text: ::
+For example, the extension transforms the text directly below into the
+HTML shown after it.
 
-    The molecular composition of water is H~2~O.
+.. code-block:: text
 
-… using Markdown with this extension will output:
+    Water is H~2~O.
 
-.. code :: html
+.. code-block:: html
 
-    <p>The molecular composition of water is H<sub>2</sub>O.</p>
+    <p>Water is H<sub>2</sub>O.</p>
 
 This project is provided under the `Simplified (2 Clause) BSD license`_,
 provided in full in the LICENSE file.
