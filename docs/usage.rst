@@ -33,6 +33,6 @@ Command Line
 .. code-block:: console
 
     $ echo 'The molecular composition of water is H~2~O.' > text.md
-    $ python -m markdown -o html5 -x 'mdx_subscript' -f text.html text.md
+    $ python -m markdown -o html -x 'mdx_subscript' -f text.html text.md
     $ cat text.html
     <p>The molecular composition of water is H<sub>2</sub>O.</p>
