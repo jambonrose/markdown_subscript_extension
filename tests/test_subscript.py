@@ -4,8 +4,8 @@
 :website: https://github.com/jambonrose/markdown_subscript_extension
 :copyright: Copyright 2014-2018 Andrew Pinkham
 :license: BSD, see LICENSE for details.
-"""
 
+"""
 from __future__ import unicode_literals
 
 from markdown import markdown, version_info as md_version
