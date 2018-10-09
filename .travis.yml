@@ -34,7 +34,7 @@ matrix:
 install:
 - if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then pip install -r requirements/lint_requirements.txt ; fi
 - pip install -r requirements/test_requirements.txt
-- pip install codecov
+- pip install codecov pytest-travis-fold
 - pip install -q "Markdown>=$MD_VERSION,<$MD_NEXT"
 - python setup.py develop
 before_script:
