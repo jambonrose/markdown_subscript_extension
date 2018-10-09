@@ -124,7 +124,7 @@ class CustomCheckCommand(CheckCommand):
 
 setup(
     name="MarkdownSubscript",
-    version="2.1.0",  # PEP 440 Compliant Semantic Versioning
+    version="2.1.1",  # PEP 440 Compliant Semantic Versioning
     keywords=["text", "filter", "markdown", "html", "subscript"],
     description="Python-Markdown extension to allow for subscript text.",
     long_description=LONG_DESCRIPTION,
