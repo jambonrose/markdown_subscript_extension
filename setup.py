@@ -165,4 +165,7 @@ setup(
         "Topic :: Text Processing :: Filters",
         "Topic :: Text Processing :: Markup :: HTML",
     ],
+    entry_points={
+        "markdown.extensions": ["subscript = mdx_subscript:SubscriptExtension"]
+    },
 )
