@@ -130,6 +130,15 @@ setup(
     long_description=LONG_DESCRIPTION,
     author="Andrew Pinkham",
     url="https://github.com/jambonrose/markdown_subscript_extension",
+    project_urls={
+        "Documentation": (
+            "https://markdown-subscript-extension.rtfd.io/en/stable/"
+        ),
+        "Source": "https://github.com/jambonrose/markdown_subscript_extension",
+        "Tracker": (
+            "https://github.com/jambonrose/markdown_subscript_extension/issues"
+        ),
+    },
     cmdclass={"check": CustomCheckCommand},
     py_modules=["mdx_subscript"],
     install_requires=["Markdown>=2.5,<3.1"],
