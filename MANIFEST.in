@@ -16,6 +16,6 @@ include LICENSE
 include pyproject.toml
 include README.rst
 include setup.cfg
-recursive-include docs *.rst conf.py Makefile make.bat
+recursive-include docs *.txt *.rst conf.py Makefile make.bat
 recursive-include requirements *.txt
 recursive-include tests *.py
