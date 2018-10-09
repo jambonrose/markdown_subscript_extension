@@ -2,6 +2,14 @@
 History
 =======
 
+2.1.1 (2018-10-09)
+------------------
+- (Re-)Enable short-name module reference
+  (specific to Markdown v3; PR `#53`_)
+- Improved setup.py metadata
+
+.. _#53: https://github.com/jambonrose/markdown_subscript_extension/pull/53
+
 2.1.0 (2018-10-08)
 ------------------
 - Add support for Python-Markdown 3.0
