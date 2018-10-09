@@ -20,7 +20,7 @@ History
 - Drop Support For:
     - Python 2.6 (EOL 2013)
     - Python 3.2 (EOL 2016)
-    - Python-Markdown 2.4 (Superceded in 2014)
+    - Python-Markdown 2.4 (Superseded in 2014)
 - Fix Issue #2 - Setup.py errors; Description.rst missing
 
 1.0.1 (2014-10-17)

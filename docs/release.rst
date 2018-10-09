@@ -1,29 +1,35 @@
-=======
-Release
-=======
+==========================
+Package Release Guidelines
+==========================
 
 This document serves as a guide for the release manage of the project.
+The package is to be released on both Github and PyPI.
 
-The project follows a 'Squash and Rebase' git branch model.
+The project follows semantic versioning and uses the 'Squash and Rebase'
+git branch model.
 
-The package is to be released on both Github and PyPI. The packages are to be identical, which means that the git tag that generates the Github release must be generated on the commit that is checked out when the PyPI release is created. For this reason and because the project follows a 'Squash and Rebase' branch workflow, `bumpversion` does not automatically tag commits during version changes.
+If the version of the package has not been properly increased, please use
+``bumpversion`` to increase the major, minor, or patch number as needed.
+Add change notes to the history document.
 
-As such, releases will occur on the development branch after a feature or bug branch has been merged. While the test suite will have run on the feature/bug branch, releases should wait for tests to finish on the development branch. The Makefile provides the `dist` target for generating and signing packages.
+Once the branch for bumping the version has been tested and squashed, the
+**package release** should occur on the **development branch**. Remember
+to pull/fast-forward the development branch from Github!
 
-This distribution should be tested on `Test PyPI`_. `PyPI must be configured first`_.
+To release to PyPI, first run the Makefile ``dist`` target. If all goes
+well, upload the release using the ``release`` target.
 
-.. code :: console
+.. code-block:: console
 
-    $ twine upload dist/* -r testpypi
+    $ make dist
+    $ make release
 
-The `Makefile` `release` target will upload the release to PyPI.
+Tag the latest commit  with the new version (the version should be
+prefixed with a ``v`` for consistency), and then push to Github.
 
-If this is successful, then the current git commit must be tagged. Remember to place a `v` in front of the version number.
-
-.. code :: console
+.. code-block:: console
 
     $ git tag v2.0.1
     $ git push origin --tags
 
-.. _`Test PyPI`: https://testpypi.python.org/pypi
-.. _`PyPI must be configured first`: https://docs.python.org/3/distutils/packageindex.html#the-pypirc-file
+🎉 That's all! You've released on Github and PyPI!

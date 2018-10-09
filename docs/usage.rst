@@ -2,20 +2,40 @@
 Usage
 =====
 
+.. contents::
+    :local:
+
 Python
 ------
 
-.. code :: pycon
+.. code-block:: pycon
 
     >>> from markdown import markdown
+    >>> from mdx_subscript import SubscriptExtension
     >>> text = "The molecular composition of water is H~2~O."
-    >>> markdown(text, ['subscript'])
+    >>> markdown(text, extensions=[SubscriptExtension()])
     '<p>The molecular composition of water is H<sub>2</sub>O.</p>'
+
+You may also refer to the extension by module name
+
+.. code-block:: pycon
+
+    >>> markdown(text, extensions=['mdx_subscript'])
+
+.. NOTE::
+    In older versions of Markdown, you will need to refer to the module
+    without the ``mdx`` prefix, as demonstrated below.
+
+    .. code-block:: pycon
+
+        >>> markdown(text, extensions=['subscript'])
 
 Command Line
 ------------
 
-.. code :: bash
+.. code-block:: console
 
     $ echo 'The molecular composition of water is H~2~O.' > text.md
-    $ python -m markdown -o html5 -x 'subscript' -f text.html text.md
+    $ python -m markdown -o html5 -x 'mdx_subscript' -f text.html text.md
+    $ cat text.html
+    <p>The molecular composition of water is H<sub>2</sub>O.</p>

@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Andrew Pinkham <http://AndrewsForge.com>
+* Andrew Pinkham <http://andrewsforge.com/>
 
 Contributors
 ------------
