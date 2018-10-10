@@ -14,6 +14,8 @@ check:
 clean:
 	rm -rf *.egg-info
 	rm -rf .coverage
+	rm -rf .eggs
+	rm -rf .pytest_cache
 	rm -rf .tox
 	rm -rf build
 	rm -rf dist

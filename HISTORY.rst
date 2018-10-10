@@ -2,6 +2,14 @@
 History
 =======
 
+2.1.1 (2018-10-09)
+------------------
+- (Re-)Enable short-name module reference
+  (specific to Markdown v3; PR `#53`_)
+- Improved setup.py metadata
+
+.. _#53: https://github.com/jambonrose/markdown_subscript_extension/pull/53
+
 2.1.0 (2018-10-08)
 ------------------
 - Add support for Python-Markdown 3.0
@@ -14,6 +22,7 @@ History
 - Rework existing restructured text documents
 - Fix badges in Read Me
 
+
 2.0.0 (2017-04-17)
 ------------------
 - Add test/support for Python-Markdown 2.6
@@ -23,9 +32,11 @@ History
     - Python-Markdown 2.4 (Superseded in 2014)
 - Fix Issue #2 - Setup.py errors; Description.rst missing
 
+
 1.0.1 (2014-10-17)
 ------------------
 - Update for Python-Markdown 2.5
+
 
 1.0.0 (2014-07-29)
 ------------------

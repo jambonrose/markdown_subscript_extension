@@ -11,11 +11,11 @@ HTML shown after it.
 
 .. code-block:: text
 
-    The molecular composition of water is H~2~O.
+    Water is H~2~O.
 
 .. code-block:: html
 
-    <p>The molecular composition of water is H<sub>2</sub>O.</p>
+    <p>Water is H<sub>2</sub>O.</p>
 
 The code is `Simplified (2 Clause) BSD license`_ and is available on `Github.`_
 

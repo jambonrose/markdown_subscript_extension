@@ -4,8 +4,8 @@
 :website: https://github.com/jambonrose/markdown_subscript_extension
 :copyright: Copyright 2014-2018 Andrew Pinkham
 :license: BSD, see LICENSE for details.
-"""
 
+"""
 from __future__ import unicode_literals
 
 from markdown import markdown, version_info as md_version
@@ -43,14 +43,7 @@ TEXT_DATA = [
             ),
             id="Full module name",
         ),
-        param(
-            ["subscript"],
-            marks=mark.skipif(
-                md_version >= (3, 0),
-                reason="Module matching by shortname removed in Markdown 3.0",
-            ),
-            id="Short module name",
-        ),
+        param(["subscript"], id="Short module name"),
     ],
 )
 def extensions(request):

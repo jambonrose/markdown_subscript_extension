@@ -124,12 +124,21 @@ class CustomCheckCommand(CheckCommand):
 
 setup(
     name="MarkdownSubscript",
-    version="2.1.0",  # PEP 440 Compliant Semantic Versioning
+    version="2.1.1",  # PEP 440 Compliant Semantic Versioning
     keywords=["text", "filter", "markdown", "html", "subscript"],
     description="Python-Markdown extension to allow for subscript text.",
     long_description=LONG_DESCRIPTION,
     author="Andrew Pinkham",
     url="https://github.com/jambonrose/markdown_subscript_extension",
+    project_urls={
+        "Documentation": (
+            "https://markdown-subscript-extension.rtfd.io/en/stable/"
+        ),
+        "Source": "https://github.com/jambonrose/markdown_subscript_extension",
+        "Tracker": (
+            "https://github.com/jambonrose/markdown_subscript_extension/issues"
+        ),
+    },
     cmdclass={"check": CustomCheckCommand},
     py_modules=["mdx_subscript"],
     install_requires=["Markdown>=2.5,<3.1"],
@@ -156,4 +165,7 @@ setup(
         "Topic :: Text Processing :: Filters",
         "Topic :: Text Processing :: Markup :: HTML",
     ],
+    entry_points={
+        "markdown.extensions": ["subscript = mdx_subscript:SubscriptExtension"]
+    },
 )
