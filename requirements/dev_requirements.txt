@@ -2,5 +2,5 @@ bumpversion==0.5.3
 pre-commit==1.15.2
 setuptools==41.0.1
 tox==3.9.0
-twine==1.12.1
+twine==1.13.0
 wheel==0.32.3
