@@ -30,8 +30,7 @@ def makeExtension(*args, **kwargs):  # noqa: N802
 class SubscriptExtension(Extension):
     """Extension: text between ~ characters will be subscripted."""
 
-    def extendMarkdown(self, md, md_globals):  # noqa: N802
-        """Insert 'subscript' pattern before 'not_strong' pattern."""
-        md.inlinePatterns.add(
-            "subscript", SimpleTagPattern(SUBSCRIPT_RE, "sub"), "<not_strong"
-        )
+    def extendMarkdown(self, md):  # noqa: N802
+        """Insert 'subscript' pattern."""
+        # Priority of 75 corresponds to a place before the not_strong pattern
+        md.inlinePatterns.register(SimpleTagPattern(SUBSCRIPT_RE, "sub"), "subscript", 75)
